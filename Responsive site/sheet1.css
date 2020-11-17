@@ -1,33 +1,36 @@
-.wrapper {
+.l-wrapper {
   width: 100%;
   font-family: "Hiragino Kaku Gothic ProN";
 }
 
+a {
+  text-decoration: none;
+}
 
-.header-logo {
+.c-header-logo {
   margin: 10px 5px;
   float:left;
 }
 
-img.header-logo {
+.header-logo {
   width: 40px;
   height: 40px;
   border-radius: 5px;
 }
 
-.header-list {
+ul.c-header-list {
   float:right;
-  color:white;
   padding: 0px 10px;
+  color:#ffffff;
 }
 
-li {
-  list-style:none;
+ ul.c-header-list>li {
+  list-style: none;
   float:left;
   margin: 0px 10px;
 }
 
-.top-wrapper {
+.p-top-wrapper {
   padding: 350px 0 150px 0;
   height: 550px;
   background-image:url("https://cdn.pixabay.com/photo/2020/09/02/01/04/lighthouse-5537038__480.jpg");
@@ -44,22 +47,22 @@ li {
   letter-spacing: 2px;
 }
 
-.about-wrapper {
+.p-about-wrapper {
   height: 1400px;
 }
 
-.about-container {
+.p-about-container {
   padding-top:100px;
   padding-bottom:20px;
   text-align: center;
 }
 
 
-.about-container h2 {
+.p-about-container>h2 {
   font-size:50px;
 }
 
-.about-container p {
+.p-about-container>p {
   font-size:20px;
   color: #808080;
   padding-bottom: 50px;
@@ -67,7 +70,7 @@ li {
   position: relative;
 }
 
-.about-container p::after {
+.p-about-container p::after {
   content: '';
   position: absolute;
   left: 38%;
@@ -80,9 +83,13 @@ li {
 
 
 
-.about-icon {
+ul.p-about-icon {
   margin:0 auto;
   padding-top:100px;
+}
+
+ul.p-about-icon>li{
+  list-style: none;
 }
 
 .about-icon1 {
@@ -116,6 +123,9 @@ li {
   border-radius: 40px;
   padding: 20px 20px;
 }
+
+
+
 
 .work-wrapper {
   text-align: center;
